@@ -95,7 +95,7 @@ header {
 .title,
 .price {
   text-align: center;
-  /* font-size: 13px; */
+  font-size: 13px;
 }
 
 .title {
