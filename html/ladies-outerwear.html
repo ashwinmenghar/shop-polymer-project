@@ -36,7 +36,7 @@
         <span class="total-items">(6 items)</span>
       </header>
 
-      <ul class="grid">
+      <ul class="product-list">
         <li>
           <a href="./single-item-page.html" class="item">
             <img
@@ -44,8 +44,8 @@
               alt="Ladies Modern Stretch Full Zip"
               class="item-img"
             />
-            <p class="title">Ladies Modern Stretch Full Zip</p>
-            <p class="price">$41.60</p>
+            <p class="fs-13 title">Ladies Modern Stretch Full Zip</p>
+            <p class="fs-13 price">$41.60</p>
           </a>
         </li>
         <li>
@@ -55,8 +55,8 @@
               alt="Ladies Colorblock Wind Jacket"
               class="item-img"
             />
-            <p class="title">Ladies Colorblock Wind Jacket</p>
-            <p class="price">$45.90</p>
+            <p class="fs-13 title">Ladies Colorblock Wind Jacket</p>
+            <p class="fs-13 price">$45.90</p>
           </a>
         </li>
         <li>
@@ -66,8 +66,8 @@
               alt="Ladies Voyage Fleece Jacket"
               class="item-img"
             />
-            <p class="title">Ladies Voyage Fleece Jacket</p>
-            <p class="price">$48.00</p>
+            <p class="fs-13 title">Ladies Voyage Fleece Jacket</p>
+            <p class="fs-13 price">$48.00</p>
           </a>
         </li>
         <li>
@@ -77,8 +77,8 @@
               alt="Ladies Pullover L/S Hood"
               class="item-img"
             />
-            <p class="title">Ladies Pullover L/S Hood</p>
-            <p class="price">$36.50</p>
+            <p class="fs-13 title">Ladies Pullover L/S Hood</p>
+            <p class="fs-13 price">$36.50</p>
           </a>
         </li>
         <li>
@@ -88,8 +88,8 @@
               alt="Ladies Sonoma Hybrid Knit Jacket"
               class="item-img"
             />
-            <p class="title">Ladies Sonoma Hybrid Knit Jacket</p>
-            <p class="price">$84.85</p>
+            <p class="fs-13 title">Ladies Sonoma Hybrid Knit Jacket</p>
+            <p class="fs-13 price">$84.85</p>
           </a>
         </li>
         <li>
@@ -99,8 +99,8 @@
               alt="Ladies Yerba Knit Quarter Zip"
               class="item-img"
             />
-            <p class="title">Ladies Yerba Knit Quarter Zip</p>
-            <p class="price">$64.20</p>
+            <p class="fs-13 title">Ladies Yerba Knit Quarter Zip</p>
+            <p class="fs-13 price">$64.20</p>
           </a>
         </li>
       </ul>
@@ -121,63 +121,4 @@
       side.classList.add("active");
     });
   </script>
-  <!-- <script>
-    let grid = document.querySelector(".grid");
-    let li = document.createElement("li");
-    let content = `<a href="./single-item-page.html" class="item">
-            <img
-              src="https://shop.polymer-project.org/esm-bundled/./images/mens_outerwear/10-15068B.jpg"
-              alt=""
-              class="item-img"
-              class="item-img"
-            />
-
-            <p class="title">Men's Tech Shell Full-Zip</p>
-            <p class="price">$50.20</p>
-          </a>`;
-
-    li.innerHTML = content;
-
-    grid.appendChild(li);
-
-    // Fetch JSON data from a file
-    fetch("./utility/mens_tshirts.json")
-      .then((response) => {
-        // Check if the response is successful
-        if (!response.ok) {
-          throw new Error("Network response was not ok " + response.statusText);
-        }
-        return response.json(); // Parse JSON data
-      })
-      .then((data) => {
-        console.log(data); // Access the JSON data
-        displayProducts(data); // Call a function to display the data
-      })
-      .catch((error) => {
-        console.error("There was a problem with the fetch operation:", error);
-      });
-
-    function displayProducts(products) {
-      const ul = grid; // Target the <ul> element
-
-      products.forEach((product) => {
-        console.log(product.image);
-
-        // Create a new <li> element
-        const li = document.createElement("li");
-        li.innerHTML = `
-      <a href="./single-item-page.html" class="item">
-        <img
-src="https://shop.polymer-project.org/esm-bundled/./images/mens_outerwear/10-15068B.jpg"
-          alt="${product.title}"
-          class="item-img"
-        />
-        <p class="title">${product.title}</p>
-        <p class="price">$${product.price.toFixed(2)}</p>
-      </a>
-    `;
-        ul.appendChild(li); // Append the <li> to the <ul>
-      });
-    }
-  </script> -->
 </html>
