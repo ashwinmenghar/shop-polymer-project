@@ -615,6 +615,10 @@ input[type="checkbox"] {
   margin: 40px 20px;
 }
 
+.category-main-img {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .hamburger-icon {
     display: none;
@@ -693,11 +697,16 @@ input[type="checkbox"] {
     margin: 0 0 8px 0;
   }
 
+  .checkout-form {
+    max-width: 1440px;
+  }
+  .cart-block {
+    max-width: 900px;
+  }
   .cart-block,
   .checkout-form {
     padding-top: 5rem;
     margin: auto;
-    max-width: 900px;
   }
 
   .cart-block {
@@ -832,5 +841,13 @@ input[type="checkbox"] {
 
   .subtotal {
     margin: 0 64px 0 24px;
+  }
+
+  .place-order-btn {
+    width: 13rem;
+  }
+
+  .category-main-img {
+    display: block;
   }
 }
