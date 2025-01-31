@@ -8,28 +8,48 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="left-bar-item">
-        <div class="hamburger-icon">
-          <img src="../back-icon.svg" alt="icon" width="15" />
+    <nav>
+      <div class="navbar">
+        <div class="left-bar-item">
+          <div class="back-icon">
+            <img src="../back-icon.svg" alt="icon" width="20" />
+          </div>
         </div>
-        <ul>
-          <li>Men's Outerwear</li>
-          <li>Ladies Outerwear</li>
-          <li>Men's T-Shirts</li>
-          <li>Ladies T-Shirts</li>
-        </ul>
+        <a href="./" class="main-title text-decoration-none">SHOP</a>
+        <div class="shopping-cart">
+          <a href="./cart.html">
+            <img src="../icon-cart.svg" alt="cart-icon" width="24" />
+            <span class="cart-badge">1</span>
+          </a>
+        </div>
       </div>
-      <a href="./" class="main-title">SHOP</a>
-      <div class="shopping-cart">
-        <a href="./cart.html">
-          <img src="../icon-cart.svg" alt="cart-icon" width="24" />
-          <span class="cart-badge">1</span>
-        </a>
+      <div>
+        <ul class="tabContainer">
+          <li class="underline">
+            <a href="./mens-outerwear.html" class="text-decoration-none">
+              Men's Outerwear
+            </a>
+          </li>
+          <li>
+            <a href="./ladies-outerwear.html" class="text-decoration-none">
+              Ladies Outerwear
+            </a>
+          </li>
+          <li>
+            <a href="./mens-tshirts.html" class="text-decoration-none">
+              Men's T-Shirts
+            </a>
+          </li>
+          <li>
+            <a href="./ladies-tshirts.html" class="text-decoration-none">
+              Ladies T-Shirts
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
 
-    <main class="details-page">
+    <main class="details-page cart-container main-container">
       <img
         src="../images/mens_outerwear/10-15103B.jpg"
         alt="YouTube Unisex Flex Fleece Zip Hoodie"
@@ -43,7 +63,7 @@
 
         <div class="pickers">
           <div class="size-card">
-            <label>Size</label>
+            <label class="fs-13">Size</label>
             <select class="selection">
               <option>XS</option>
               <option>S</option>
@@ -53,7 +73,7 @@
             </select>
           </div>
           <div class="size-card">
-            <label>Quantity</label>
+            <label class="fs-13">Quantity</label>
             <select class="quantity selection">
               <option>1</option>
               <option>2</option>
@@ -86,16 +106,20 @@
               </ul>
             </div>
           </div>
-          <div class="add-to-cart-btn">
-            <a href="./cart.html">add to cart</a>
+          <div class="add-to-cart-btn d-full-cart-btn">
+            <a
+              href="./cart.html"
+              class="d-full-place-order-btn text-decoration-none"
+              >add to cart</a
+            >
           </div>
         </div>
       </div>
     </main>
 
     <footer>
-      <a href="#"> Made by Polymer </a>
-      <p class="demo-label">Demo Only</p>
+      <a href="#" class="text-decoration-none fs-13"> Made by Polymer </a>
+      <p class="demo-label fs-13">Demo Only</p>
     </footer>
   </body>
 </html>

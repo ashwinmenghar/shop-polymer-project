@@ -9,41 +9,69 @@
   </head>
   <body>
     <div id="contentContainer"></div>
-    <nav class="navbar">
-      <div class="left-bar-item">
-        <div class="hamburger-icon">
-          <img src="../bars-solid.svg" alt="icon" width="20" />
+    <nav>
+      <div class="navbar">
+        <div class="left-bar-item">
+          <div class="hamburger-icon">
+            <img src="../bars-solid.svg" alt="icon" width="20" />
+          </div>
         </div>
-        <ul>
-          <li>Men's Outerwear</li>
-          <li>Ladies Outerwear</li>
-          <li>Men's T-Shirts</li>
-          <li>Ladies T-Shirts</li>
-        </ul>
+        <a href="./" class="main-title text-decoration-none">SHOP</a>
+        <div class="shopping-cart">
+          <a href="./cart.html">
+            <img src="../icon-cart.svg" alt="cart-icon" width="24" />
+            <span class="cart-badge">1</span>
+          </a>
+        </div>
       </div>
-      <a href="./" class="main-title">SHOP</a>
-      <div class="shopping-cart">
-        <a href="./cart.html">
-          <img src="../icon-cart.svg" alt="cart-icon" width="24" />
-          <span class="cart-badge">1</span>
-        </a>
+      <div>
+        <ul class="tabContainer">
+          <li class="underline">
+            <a href="./mens-outerwear.html" class="text-decoration-none">
+              Men's Outerwear
+            </a>
+          </li>
+          <li>
+            <a href="./ladies-outerwear.html" class="text-decoration-none">
+              Ladies Outerwear
+            </a>
+          </li>
+          <li>
+            <a href="./mens-tshirts.html" class="text-decoration-none">
+              Men's T-Shirts
+            </a>
+          </li>
+          <li>
+            <a href="./ladies-tshirts.html" class="text-decoration-none">
+              Ladies T-Shirts
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
 
     <section class="main-container">
+      <div class="main-section category">
+        <img
+          src="../images/mens_outerwear.jpg"
+          alt="Men's Outerwear"
+          class="category-img"
+        />
+      </div>
       <header>
         <h1>Men's Outerwear</h1>
         <span class="total-items">(16 items)</span>
       </header>
 
-      <ul class="product-list">
+      <ul class="items main-section">
         <!-- Men's Tech Shell Full-Zip -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-15068B.jpg"
               alt="Men's Tech Shell Full-Zip"
               class="item-img"
+              width="50"
             />
             <p class="fs-13 title">Men's Tech Shell Full-Zip</p>
             <p class="fs-13 price">$50.20</p>
@@ -52,7 +80,7 @@
 
         <!-- Anvil L/S Crew Neck - Grey -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-14154B.jpg"
               alt="Anvil L/S Crew Neck - Grey"
@@ -65,7 +93,7 @@
 
         <!-- Green Flex Fleece Zip Hoodie -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-14157B.jpg"
               alt="Green Flex Fleece Zip Hoodie"
@@ -78,7 +106,7 @@
 
         <!-- Android Nylon Packable Jacket -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-15041B.jpg"
               alt="Android Nylon Packable Jacket"
@@ -91,7 +119,7 @@
 
         <!-- YouTube Ultimate Hooded Sweatshirt -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-14133B.jpg"
               alt="YouTube Ultimate Hooded Sweatshirt"
@@ -104,7 +132,7 @@
 
         <!-- Grey Heather Fleece Zip Hoodie -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-14160B.jpg"
               alt="Grey Heather Fleece Zip Hoodie"
@@ -117,7 +145,7 @@
 
         <!-- Vastrm Hoodie -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-14153B.jpg"
               alt="Vastrm Hoodie"
@@ -130,7 +158,7 @@
 
         <!-- Recycled Plastic Bottle Hoodie - Green -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-14158B.jpg"
               alt="Recycled Plastic Bottle Hoodie - Green"
@@ -143,7 +171,7 @@
 
         <!-- Rowan Pullover Hood -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-14152B.jpg"
               alt="Rowan Pullover Hood"
@@ -156,7 +184,7 @@
 
         <!-- Men's Voyage Fleece Jacket -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-14155B.jpg"
               alt="Men's Voyage Fleece Jacket"
@@ -169,7 +197,7 @@
 
         <!-- Eco-Jersey Chrome Zip Up Hoodie -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-14159B.jpg"
               alt="Eco-Jersey Chrome Zip Up Hoodie"
@@ -182,7 +210,7 @@
 
         <!-- Android Colorblock Hooded Pullover -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-14146B.jpg"
               alt="Android Colorblock Hooded Pullover"
@@ -195,7 +223,7 @@
 
         <!-- Tri-blend Full-Zip Hoodie -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-14216B.jpg"
               alt="Tri-blend Full-Zip Hoodie"
@@ -208,7 +236,7 @@
 
         <!-- Fleece Full-Zip Hoodie -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-14215B.jpg"
               alt="Fleece Full-Zip Hoodie"
@@ -221,7 +249,7 @@
 
         <!-- Jacquard-Knit Full-Zip Fleece -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-14217B.jpg"
               alt="Jacquard-Knit Full-Zip Fleece"
@@ -234,7 +262,7 @@
 
         <!-- YouTube Unisex Flex Fleece Zip Hoodie -->
         <li>
-          <a href="./single-item-page.html" class="item">
+          <a href="./single-item-page.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear/10-15103B.jpg"
               alt="YouTube Unisex Flex Fleece Zip Hoodie"
@@ -247,78 +275,8 @@
       </ul>
     </section>
     <footer>
-      <a href="#"> Made by Polymer </a>
-      <p class="demo-label">Demo Only</p>
+      <a href="#" class="text-decoration-none fs-13"> Made by Polymer </a>
+      <p class="demo-label fs-13">Demo Only</p>
     </footer>
   </body>
-  <script>
-    const sidebar = document.querySelector(".hamburger-icon");
-
-    let side = document.getElementById("contentContainer");
-
-    sidebar.addEventListener("click", (e) => {
-      e.preventDefault();
-      console.log(side);
-      side.classList.add("active");
-    });
-  </script>
-  <!-- <script>
-    let grid = document.querySelector(".grid");
-    let li = document.createElement("li");
-    let content = `<a href="./single-item-page.html" class="item">
-            <img
-              src="https://shop.polymer-project.org/esm-bundled/../images/mens_outerwear/10-15068B.jpg"
-              alt=""
-              class="item-img"
-              class="item-img"
-            />
-
-            <p class="fs-13 title">Men's Tech Shell Full-Zip</p>
-            <p class="fs-13 price">$50.20</p>
-          </a>`;
-
-    li.innerHTML = content;
-
-    grid.appendChild(li);
-
-    // Fetch JSON data from a file
-    fetch("./utility/mens_tshirts.json")
-      .then((response) => {
-        // Check if the response is successful
-        if (!response.ok) {
-          throw new Error("Network response was not ok " + response.statusText);
-        }
-        return response.json(); // Parse JSON data
-      })
-      .then((data) => {
-        console.log(data); // Access the JSON data
-        displayProducts(data); // Call a function to display the data
-      })
-      .catch((error) => {
-        console.error("There was a problem with the fetch operation:", error);
-      });
-
-    function displayProducts(products) {
-      const ul = grid; // Target the <ul> element
-
-      products.forEach((product) => {
-        console.log(product.image);
-
-        // Create a new <li> element
-        const li = document.createElement("li");
-        li.innerHTML = `
-      <a href="./single-item-page.html" class="item">
-        <img
-src="https://shop.polymer-project.org/esm-bundled/../images/mens_outerwear/10-15068B.jpg"
-          alt="${product.title}"
-          class="item-img"
-        />
-        <p class="fs-13 title">${product.title}</p>
-        <p class="fs-13 price">$${product.price.toFixed(2)}</p>
-      </a>
-    `;
-        ul.appendChild(li); // Append the <li> to the <ul>
-      });
-    }
-  </script> -->
 </html>

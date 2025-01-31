@@ -8,77 +8,126 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="left-bar-item">
-        <div class="hamburger-icon">
-          <img src="../bars-solid.svg" alt="icon" width="20" />
+    <nav>
+      <div class="navbar">
+        <div class="left-bar-item">
+          <div class="hamburger-icon">
+            <img src="../bars-solid.svg" alt="icon" width="20" />
+          </div>
         </div>
-        <ul>
-          <li>Men's Outerwear</li>
-          <li>Ladies Outerwear</li>
-          <li>Men's T-Shirts</li>
-          <li>Ladies T-Shirts</li>
-        </ul>
-      </div>
-      <a href="./" class="main-title">SHOP</a>
-      <div class="shopping-cart">
-        <img src="../icon-cart.svg" alt="cart-icon" width="24" />
-        <span class="cart-badge">1</span>
+        <a href="./" class="main-title text-decoration-none">SHOP</a>
+        <div class="shopping-cart">
+          <a href="./cart.html">
+            <img src="../icon-cart.svg" alt="cart-icon" width="24" />
+            <span class="cart-badge">1</span>
+          </a>
+        </div>
       </div>
     </nav>
-    <section class="main-container">
-      <header>
-        <h1>Your Cart</h1>
-        <span class="total-items">(1 item)</span>
-      </header>
-
-      <div class="subsection">
+    <header class="checkout-form">
+      <h1>Your Cart</h1>
+      <span class="total-items">(2 item)</span>
+    </header>
+    <section class="main-section cart-block">
+      <div class="main-frame">
         <div class="list">
-          <!-- <a href="#"> </a> -->
           <img
             src="../images/mens_outerwear/10-15103B.jpg"
             alt="YouTube Unisex Flex Fleece Zip Hoodie"
             class="cart-img"
-            width="40"
           />
-          <div class="fs-13 cart-details">
-            <div class="name">
-              <p class="fs-13 cart-product-title">
-                YouTube Unisex Flex Fleece Zip...
-              </p>
-              <div>
-                <img src="../icons8-close.svg" alt="icon" width="13" />
-              </div>
+        </div>
+        <div class="flex">
+          <div class="name">
+            <p class="fs-13">Men's Tech Shell Full-Zip</p>
+          </div>
+          <div class="detail">
+            <div class="select-box cart-select">
+              <label class="fs-13 color-gray">Qty:</label>
+              <select id="quantitySelect" aria-label="Change quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
             </div>
-
-            <div class="cart-name">
-              <div class="fs-13 cart-detail">
-                <div>
-                  <label>Qty</label>
-                  <select class="cart-qty">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                  </select>
-                </div>
-                <p class="cart-size">Size: <span>M</span></p>
-                <p class="fs-13 price">$45.99</p>
-              </div>
+            <div class="size fs-13 color-gray size-block">
+              Size: <span>M</span>
+            </div>
+            <div class="price fs-13 color-gray">$50.20</div>
+            <div class="">
+              <img
+                src="../icons8-close.svg"
+                alt="icon"
+                width="13"
+                class="close-icon"
+              />
             </div>
           </div>
         </div>
-        <div class="fs-13 checkout-box">
-          <p>Total:</p>
-          <span>$45.25</span>
+      </div>
+      <div class="main-frame">
+        <div class="list">
+          <img
+            src="../images/mens_tshirts/10-13058B.jpg"
+            alt="YouTube Unisex Flex Fleece Zip Hoodie"
+            class="cart-img"
+          />
+        </div>
+        <div class="flex">
+          <div class="name">
+            <p class="fs-13">YouTube Organic Cotton T-Shirt - Grey</p>
+          </div>
+          <div class="detail">
+            <div class="select-box cart-select">
+              <label class="fs-13 color-gray">Qty:</label>
+              <select id="quantitySelect" aria-label="Change quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+            <div class="size fs-13 color-gray size-block">
+              Size: <span>M</span>
+            </div>
+            <div class="price fs-13 color-gray">$14.75</div>
+            <div class="">
+              <img
+                src="../icons8-close.svg"
+                alt="icon"
+                width="13"
+                class="close-icon"
+              />
+            </div>
+          </div>
         </div>
       </div>
+      <div class="checkout-box fs-13">
+        Total: <span class="subtotal">$64.95</span>
+
+        <a href="./checkout" class="text-decoration-none d-full-place-order-btn"
+          >Checkout</a
+        >
+      </div>
       <div class="add-to-cart-btn">
-        <a href="./checkout.html">checkout</a>
+        <a href="./checkout.html" class="text-decoration-none">checkout</a>
       </div>
     </section>
   </body>

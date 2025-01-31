@@ -9,163 +9,200 @@
     <style></style>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="left-bar-item">
-        <div class="hamburger-icon">
-          <img src="../bars-solid.svg" alt="icon" width="20" />
+    <nav>
+      <div class="navbar">
+        <div class="left-bar-item">
+          <div class="hamburger-icon">
+            <img src="../bars-solid.svg" alt="icon" width="20" />
+          </div>
         </div>
-        <ul>
-          <li>Men's Outerwear</li>
-          <li>Ladies Outerwear</li>
-          <li>Men's T-Shirts</li>
-          <li>Ladies T-Shirts</li>
+        <a href="./" class="main-title text-decoration-none">SHOP</a>
+        <div class="shopping-cart">
+          <a href="./cart.html">
+            <img src="../icon-cart.svg" alt="cart-icon" width="24" />
+            <span class="cart-badge">1</span>
+          </a>
+        </div>
+      </div>
+      <!-- <div>
+        <ul class="tabContainer">
+          <li>
+            <a href="./mens-outerwear.html" class="text-decoration-none">
+              Men's Outerwear
+            </a>
+          </li>
+          <li>
+            <a href="./ladies-outerwear.html" class="text-decoration-none">
+              Ladies Outerwear
+            </a>
+          </li>
+          <li>
+            <a href="./mens-tshirts.html" class="text-decoration-none">
+              Men's T-Shirts
+            </a>
+          </li>
+          <li>
+            <a href="./ladies-tshirts.html" class="text-decoration-none">
+              Ladies T-Shirts
+            </a>
+          </li>
         </ul>
-      </div>
-      <a href="./" class="main-title">SHOP</a>
-      <div class="shopping-cart">
-        <img src="../icon-cart.svg" alt="cart-icon" width="24" />
-        <span class="cart-badge">1</span>
-      </div>
+      </div> -->
     </nav>
-    <div class="cart-container">
+    <div class="cart-container main-container">
       <form action="data/sample_success_response.json" class="checkout-form">
-        <section>
-          <header>
-            <h1>Checkout</h1>
-            <span class="total-items"
-              >Shop is a demo app - form data will not be sent</span
-            >
-          </header>
-
-          <div class="checkout-section">
-            <h2>Account Information</h2>
-            <div class="form-holder">
-              <input type="email" id="email" placeholder="" required />
-              <label for="email">Email</label>
-            </div>
-            <div class="form-holder">
-              <input type="number" id="phone" placeholder="" required />
-              <label for="phone">Phone Number</label>
-            </div>
-
-            <h2>Shipping Address</h2>
-            <div class="form-holder">
-              <input type="text" id="address" placeholder="" required />
-              <label for="address">Address</label>
-            </div>
-            <div class="form-holder">
-              <input type="text" id="city" placeholder="" required />
-              <label for="city">City</label>
-            </div>
-            <div class="form-holder-column">
+        <header>
+          <h1>Checkout</h1>
+          <span class="total-items"
+            >Shop is a demo app - form data will not be sent</span
+          >
+        </header>
+        <div class="address-payment-form">
+          <section>
+            <div class="checkout-section">
+              <h2>Account Information</h2>
               <div class="form-holder">
-                <input type="text" id="state" placeholder="" required />
-                <label for="state">State/Province</label>
+                <input type="email" id="email" placeholder="" required />
+                <label for="email">Email</label>
               </div>
               <div class="form-holder">
-                <input type="text" id="zip" placeholder="" required />
-                <label for="zip">Zip/Postal Code</label>
+                <input type="number" id="phone" placeholder="" required />
+                <label for="phone">Phone Number</label>
               </div>
-            </div>
 
-            <div class="countries select-box">
-              <label for="country">Country</label>
-
-              <select name="country" id="country">
-                <option value="us">United States</option>
-                <option value="ca">Canada</option>
-              </select>
-            </div>
-
-            <h2>Billing Address</h2>
-
-            <div class="billing-address-picker">
-              <input
-                type="checkbox"
-                name="address"
-                id="billing-address"
-                required
-              />
-              <label for="billing-address">Use different billing address</label>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="checkout-section">
-            <h2>Payment Method</h2>
-
-            <div class="form-holder">
-              <input type="text" id="ccName" placeholder="" required />
-              <label for="ccName">Cardholder Name</label>
-            </div>
-            <div class="form-holder">
-              <input type="tel" id="ccNumber" placeholder="" required />
-              <label for="ccNumber">Cardholder Name</label>
-            </div>
-
-            <div class="expiry-section">
-              <div class="width-one-third expiry-month">
-                <label for="expiry">Expiry</label>
-                <select
-                  id="ccExpMonth"
-                  name="ccExpMonth"
-                  autocomplete="cc-exp-month"
-                  aria-label="Expiry month"
-                >
-                  <option selected="">Jan</option>
-                  <option>Feb</option>
-                  <option>Mar</option>
-                  <option>Apr</option>
-                  <option>May</option>
-                  <option>Jun</option>
-                  <option>Jul</option>
-                  <option>Aug</option>
-                  <option>Sep</option>
-                  <option>Oct</option>
-                  <option>Nov</option>
-                  <option>Dec</option>
-                </select>
+              <h2>Shipping Address</h2>
+              <div class="form-holder">
+                <input type="text" id="address" placeholder="" required />
+                <label for="address">Address</label>
               </div>
-              <div class="width-one-third expiry-holder select-box">
-                <label for="ccExpYear"></label>
-                <select
-                  id="ccExpYear"
-                  name="ccExpYear"
-                  autocomplete="cc-exp-year"
-                  aria-label="Expiry year"
-                >
-                  <option selected="">2020</option>
-                  <option>2021</option>
-                  <option>2022</option>
-                  <option>2022</option>
-                  <option>2023</option>
-                  <option>2024</option>
-                  <option>2025</option>
-                  <option>2026</option>
+              <div class="form-holder">
+                <input type="text" id="city" placeholder="" required />
+                <label for="city">City</label>
+              </div>
+              <div class="form-holder-column">
+                <div class="form-holder">
+                  <input type="text" id="state" placeholder="" required />
+                  <label for="state">State/Province</label>
+                </div>
+                <div class="form-holder">
+                  <input type="text" id="zip" placeholder="" required />
+                  <label for="zip">Zip/Postal Code</label>
+                </div>
+              </div>
+
+              <div class="countries select-box">
+                <label for="country">Country</label>
+
+                <select name="country" id="country">
+                  <option value="us">United States</option>
+                  <option value="ca">Canada</option>
                 </select>
               </div>
 
-              <div class="width-one-third mb form-holder">
-                <label for="ccvv">CVV</label>
-                <input type="tel" id="ccvv" placeholder="" required />
+              <h2>Billing Address</h2>
+
+              <div class="billing-address-picker">
+                <input
+                  type="checkbox"
+                  name="address"
+                  id="billing-address"
+                  required
+                />
+                <label for="billing-address"
+                  >Use different billing address</label
+                >
               </div>
             </div>
+          </section>
+          <section>
+            <div class="checkout-section">
+              <h2>Payment Method</h2>
 
-            <h2 class="">Order Summary</h2>
-            <div class="row order-summary-row fs-13">
-              <p>Men's Tech Shell Full-Zip</p>
-              <span>$50.20</span>
+              <div class="form-holder">
+                <input type="text" id="ccName" placeholder="" required />
+                <label for="ccName">Cardholder Name</label>
+              </div>
+              <div class="form-holder">
+                <input type="tel" id="ccNumber" placeholder="" required />
+                <label for="ccNumber">Cardholder Name</label>
+              </div>
+
+              <div class="expiry-section">
+                <div class="width-one-third expiry-month">
+                  <label for="expiry">Expiry</label>
+                  <select
+                    id="ccExpMonth"
+                    name="ccExpMonth"
+                    autocomplete="cc-exp-month"
+                    aria-label="Expiry month"
+                  >
+                    <option selected="">Jan</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                    <option>Apr</option>
+                    <option>May</option>
+                    <option>Jun</option>
+                    <option>Jul</option>
+                    <option>Aug</option>
+                    <option>Sep</option>
+                    <option>Oct</option>
+                    <option>Nov</option>
+                    <option>Dec</option>
+                  </select>
+                </div>
+                <div class="width-one-third expiry-holder select-box">
+                  <label for="ccExpYear"></label>
+                  <select
+                    id="ccExpYear"
+                    name="ccExpYear"
+                    autocomplete="cc-exp-year"
+                    aria-label="Expiry year"
+                  >
+                    <option selected="">2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                  </select>
+                </div>
+
+                <div class="width-one-third mb form-holder">
+                  <label for="ccvv">CVV</label>
+                  <input type="tel" id="ccvv" placeholder="" required />
+                </div>
+              </div>
+
+              <h2 class="">Order Summary</h2>
+              <div class="row order-summary-row fs-13">
+                <p>Men's Tech Shell Full-Zip</p>
+                <span>$50.20</span>
+              </div>
+              <div class="row total-row fs-13">
+                <p>Total</p>
+                <span>$50.20</span>
+              </div>
+
+              <div class="">
+                <a
+                  href="./checkout.html"
+                  class="d-full-place-order-btn category-shop-now-btn text-decoration-none"
+                  >place order</a
+                >
+              </div>
             </div>
-            <div class="row total-row fs-13">
-              <p>Total</p>
-              <span>$50.20</span>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </form>
       <div class="add-to-cart-btn">
-        <a href="./checkout.html">Place Order</a>
+        <a href="./checkout.html" class="text-decoration-none">Place Order</a>
       </div>
     </div>
+    <footer>
+      <a href="#" class="fs-13 text-decoration-none"> Made by Polymer </a>
+      <p class="demo-label fs-13">Demo Only</p>
+    </footer>
   </body>
 </html>

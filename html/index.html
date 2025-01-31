@@ -8,31 +8,51 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="left-bar-item">
-        <div class="hamburger-icon">
-          <img src="../bars-solid.svg" alt="icon" width="20" />
+    <nav>
+      <div class="navbar">
+        <div class="left-bar-item">
+          <div class="hamburger-icon">
+            <img src="../bars-solid.svg" alt="icon" width="20" />
+          </div>
         </div>
-        <ul>
-          <li>Men's Outerwear</li>
-          <li>Ladies Outerwear</li>
-          <li>Men's T-Shirts</li>
-          <li>Ladies T-Shirts</li>
-        </ul>
+        <a href="./" class="main-title text-decoration-none">SHOP</a>
+        <div class="shopping-cart">
+          <a href="./cart.html">
+            <img src="../icon-cart.svg" alt="cart-icon" width="24" />
+            <span class="cart-badge">1</span>
+          </a>
+        </div>
       </div>
-      <a href="./" class="main-title">SHOP</a>
-      <div class="shopping-cart">
-        <a href="./cart.html">
-          <img src="../icon-cart.svg" alt="cart-icon" width="24" />
-          <span class="cart-badge">1</span>
-        </a>
+      <div>
+        <ul class="tabContainer">
+          <li>
+            <a href="./mens-outerwear.html" class="text-decoration-none">
+              Men's Outerwear
+            </a>
+          </li>
+          <li>
+            <a href="./ladies-outerwear.html" class="text-decoration-none">
+              Ladies Outerwear
+            </a>
+          </li>
+          <li>
+            <a href="./mens-tshirts.html" class="text-decoration-none">
+              Men's T-Shirts
+            </a>
+          </li>
+          <li>
+            <a href="./ladies-tshirts.html" class="text-decoration-none">
+              Ladies T-Shirts
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
 
     <main>
-      <section>
+      <section class="main-section">
         <div class="category">
-          <a href="./mens-outerwear.html">
+          <a href="./mens-outerwear.html" class="text-decoration-none">
             <img
               src="../images/mens_outerwear.jpg"
               alt="Men's Outerwear"
@@ -40,27 +60,31 @@
             />
           </a>
           <h2>Men's Outerwear</h2>
-          <a href="./mens-outerwear.html" class="category-shop-now-btn"
+          <a
+            href="./mens-outerwear.html"
+            class="category-shop-now-btn text-decoration-none"
             >shop now</a
           >
           <!-- <button></button> -->
         </div>
         <div class="category">
-          <a href="./ladies-outerwear.html">
+          <a href="./ladies-outerwear.html" class="text-decoration-none">
             <img
               src="../images/ladies_outerwear.jpg"
               alt="Men's Outerwear"
               class="category-img"
             />
             <h2>Ladies Outerwear</h2>
-            <a href="./mens-outerwear.html" class="category-shop-now-btn"
+            <a
+              href="./mens-outerwear.html"
+              class="category-shop-now-btn text-decoration-none"
               >shop now</a
             >
           </a>
         </div>
         <div class="container">
           <div class="category">
-            <a href="./mens-tshirts.html">
+            <a href="./mens-tshirts.html" class="text-decoration-none">
               <img
                 src="../images/mens_tshirts.jpg"
                 alt="Men's T-Shirts"
@@ -69,13 +93,13 @@
               <h2>Men's T-Shirts</h2>
               <a
                 href="./mens-outerwear.html"
-                class="category-shop-now-sm-btn category-shop-now-btn"
+                class="category-shop-now-sm-btn category-shop-now-btn text-decoration-none"
                 >shop now</a
               >
             </a>
           </div>
           <div class="category">
-            <a href="./ladies-tshirts.html">
+            <a href="./ladies-tshirts.html" class="text-decoration-none">
               <img
                 src="../images/ladies_tshirts.jpg"
                 alt="Ladies T-Shirts"
@@ -84,7 +108,7 @@
               <h2>Ladies T-Shirts</h2>
               <a
                 href="./mens-outerwear.html"
-                class="category-shop-now-sm-btn category-shop-now-btn"
+                class="category-shop-now-sm-btn category-shop-now-btn text-decoration-none"
                 >shop now</a
               >
             </a>
@@ -93,7 +117,7 @@
       </section>
     </main>
     <footer>
-      <a href="#" class="fs-13"> Made by Polymer </a>
+      <a href="#" class="fs-13 text-decoration-none"> Made by Polymer </a>
       <p class="demo-label fs-13">Demo Only</p>
     </footer>
   </body>
